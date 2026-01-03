@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NISA Digital Territory: 日本の新NISA市場における最高のブランド資産 - nisabank.jp + nisatoushi.jp - 戦略的買収提案">
+    <meta name="keywords" content="NISA, デジタル金融, 戦略的資産, ドメイン買収, 日本金融市場, 投資プラットフォーム">
+    <title>NISA Digital Territory - 日本金融市場のデジタル支配権</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #2c3e50; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 100px 40px; border-radius: 10px; margin-bottom: 40px; text-align: center; box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
+        .hero h1 { font-size: 2.8em; margin-bottom: 15px; font-weight: 700; line-height: 1.3; letter-spacing: -0.5px; }
+        .hero .tagline { font-size: 1.3em; opacity: 0.9; margin-bottom: 40px; font-weight: 300; letter-spacing: 0.5px; }
+        .hero .vision { background: rgba(255, 255, 255, 0.08); padding: 30px; border-radius: 8px; margin-bottom: 40px; font-size: 1.1em; line-height: 1.8; border-left: 4px solid #4ecdc4; }
+        .hero .cta-primary { display: inline-block; background: #4ecdc4; color: white; padding: 18px 45px; text-decoration: none; border-radius: 5px; font-size: 1.1em; font-weight: 600; transition: all 0.3s; margin: 10px; box-shadow: 0 5px 15px rgba(78, 205, 196, 0.3); }
+        .hero .cta-primary:hover { background: #45b7ad; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5); }
+        .hero .contact-info { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 8px; margin-top: 30px; }
+        .hero .contact-info p { font-size: 0.95em; opacity: 0.85; margin-bottom: 8px; }
+        .hero .email { font-size: 1.2em; font-weight: 600; color: #4ecdc4; }
+        
+        /* Market Opportunity Section */
+        .opportunity-section { background: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .opportunity-section h2 { color: #1a1a2e; font-size: 2em; margin-bottom: 30px; font-weight: 700; }
+        .opportunity-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 30px; }
+        .opportunity-card { background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); padding: 25px; border-radius: 8px; border-left: 4px solid #4ecdc4; transition: all 0.3s; }
+        .opportunity-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .opportunity-card .number { font-size: 2.5em; font-weight: 700; color: #4ecdc4; margin-bottom: 10px; }
+        .opportunity-card h3 { color: #1a1a2e; margin-bottom: 10px; font-size: 1.2em; font-weight: 600; }
+        .opportunity-card p { color: #666; font-size: 0.95em; line-height: 1.7; }
+        
+        /* Strategic Value Section */
+        .value-section { background: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .value-section h2 { color: #1a1a2e; font-size: 2em; margin-bottom: 30px; font-weight: 700; }
+        .value-proposition { background: #f0fffe; padding: 25px; border-radius: 8px; border-left: 4px solid #4ecdc4; margin-bottom: 25px; }
+        .value-proposition h3 { color: #1a1a2e; margin-bottom: 10px; font-size: 1.1em; font-weight: 600; }
+        .value-proposition p { color: #555; line-height: 1.8; }
+        
+        /* Asset Package Section */
+        .asset-section { background: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .asset-section h2 { color: #1a1a2e; font-size: 2em; margin-bottom: 30px; text-align: center; font-weight: 700; }
+        .asset-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .asset-card { background: white; padding: 35px; border-radius: 8px; border: 2px solid #e8e8e8; transition: all 0.3s; }
+        .asset-card:hover { border-color: #4ecdc4; box-shadow: 0 10px 35px rgba(78, 205, 196, 0.15); }
+        .asset-card .icon { font-size: 3em; margin-bottom: 15px; }
+        .asset-card h3 { color: #1a1a2e; font-size: 1.8em; margin-bottom: 10px; font-weight: 700; }
+        .asset-card .price { color: #4ecdc4; font-size: 1.6em; font-weight: 700; margin-bottom: 15px; }
+        .asset-card .description { color: #666; margin-bottom: 20px; line-height: 1.8; font-size: 0.95em; }
+        .asset-card .keywords { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+        .asset-card .keywords p { color: #4ecdc4; font-weight: 600; font-size: 0.9em; margin-bottom: 5px; }
+        
+        /* Pricing Section */
+        .pricing-section { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; text-align: center; }
+        .pricing-section h2 { font-size: 2em; margin-bottom: 30px; font-weight: 700; }
+        .pricing-box { background: rgba(255, 255, 255, 0.08); padding: 35px; border-radius: 8px; margin-bottom: 25px; border: 1px solid rgba(78, 205, 196, 0.3); }
+        .pricing-box .amount { font-size: 2.8em; font-weight: 700; color: #4ecdc4; margin-bottom: 10px; }
+        .pricing-box .label { font-size: 1.1em; opacity: 0.9; margin-bottom: 20px; }
+        .pricing-box .terms { color: #4ecdc4; font-weight: 600; font-size: 1.05em; }
+        
+        /* CTA Section */
+        .cta-section { background: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center; }
+        .cta-section h2 { color: #1a1a2e; font-size: 2em; margin-bottom: 20px; font-weight: 700; }
+        .cta-section p { font-size: 1.05em; color: #666; margin-bottom: 30px; line-height: 1.8; }
+        .cta-button { display: inline-block; background: #4ecdc4; color: white; padding: 18px 45px; text-decoration: none; border-radius: 5px; font-size: 1.05em; font-weight: 600; margin: 10px; transition: all 0.3s; box-shadow: 0 5px 15px rgba(78, 205, 196, 0.3); }
+        .cta-button:hover { background: #45b7ad; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(78, 205, 196, 0.5); }
+        .cta-button.secondary { background: #2c3e50; box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3); }
+        .cta-button.secondary:hover { background: #1a1a2e; box-shadow: 0 8px 25px rgba(44, 62, 80, 0.5); }
+        
+        /* Contact Section */
+        .contact-section { background: white; padding: 50px 40px; border-radius: 10px; margin-bottom: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); text-align: center; border-top: 3px solid #4ecdc4; }
+        .contact-section h2 { color: #1a1a2e; font-size: 2em; margin-bottom: 25px; font-weight: 700; }
+        .contact-section .email-box { background: #f8f9fa; padding: 30px; border-radius: 8px; }
+        .contact-section .email { font-size: 1.5em; color: #4ecdc4; font-weight: 700; margin-bottom: 15px; }
+        .contact-section .note { color: #666; font-size: 0.95em; line-height: 1.8; }
+        
+        footer { background: #1a1a2e; color: white; padding: 25px; border-radius: 10px; text-align: center; margin-top: 40px; font-size: 0.9em; opacity: 0.8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>NISA Digital Territory</h1>
+            <p class="tagline">日本の新NISA市場におけるデジタル支配権</p>
+            <div class="vision">
+                日本の金融市場が急速にデジタル化される中、新NISA制度は個人投資家の行動を根本的に変えています。このドメインパッケージは、その変化の中心に位置し、貴社をNISA市場の「標準」にする戦略的資産です。
+            </div>
+            <a href="https://www.nisatoushi.jp" class="cta-primary" target="_blank">🛒 Sedo で即時購入</a>
+            <div class="contact-info">
+                <p>戦略的パートナーシップのご相談:</p>
+                <p class="email">global.nexus.jp@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Market Opportunity Section -->
+        <div class="opportunity-section">
+            <h2>📊 市場機会: 新NISA時代の到来</h2>
+            <div class="opportunity-grid">
+                <div class="opportunity-card">
+                    <div class="number">12兆円</div>
+                    <h3>新NISA投資残高</h3>
+                    <p>2025年末時点で、新NISA市場は12兆円を超える規模に成長。日本の個人投資市場の中心となっています。</p>
+                </div>
+                <div class="opportunity-card">
+                    <div class="number">30%+</div>
+                    <h3>年間成長率</h3>
+                    <p>NISA口座数は年間30%以上の速度で増加。市場の成長期はこれからが本番です。</p>
+                </div>
+                <div class="opportunity-card">
+                    <div class="number">83.6M</div>
+                    <h3>個人投資家数</h3>
+                    <p>日本の個人投資家は8,360万人。そのほぼ全員がNISA市場の恩恵を受けています。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Value Section -->
+        <div class="value-section">
+            <h2>💎 戦略的価値: なぜこのドメインなのか</h2>
+            
+            <div class="value-proposition">
+                <h3>🎯 市場の「標準」になる</h3>
+                <p>nisabank.jp と nisatoushi.jp を同時に所有することで、顧客が「NISA銀行」「NISA投資」と検索した時、必ず貴社に到達します。これは単なるSEO優位性ではなく、市場での「標準」地位の確立です。</p>
+            </div>
+
+            <div class="value-proposition">
+                <h3>🚀 顧客獲得コストの劇的削減</h3>
+                <p>月間数百万件の検索から自然流入する高品質な顧客。広告費を削減하면서도 顧客獲得効率を最大化します。</p>
+            </div>
+
+            <div class="value-proposition">
+                <h3>🏆 ブランド権威の確立</h3>
+                <p>「nisabank.jp」と「nisatoushi.jp」の所有は、市場での圧倒的な権威性を象徴します。競合他社との差別化が自動的に実現します。</p>
+            </div>
+
+            <div class="value-proposition">
+                <h3>⏰ 時間的優位性</h3>
+                <p>新NISA市場は今が成長期です。今、このドメインを確保することで、今後5年間の市場拡大の全てを貴社의 이름으로 캡처할 수 있습니다.</p>
+            </div>
+        </div>
+
+        <!-- Asset Package Section -->
+        <div class="asset-section">
+            <h2>📦 買収対象資産</h2>
+            <div class="asset-grid">
+                <div class="asset-card">
+                    <div class="icon">🏦</div>
+                    <h3>nisabank.jp</h3>
+                    <div class="price">$5,000</div>
+                    <div class="description">
+                        新NISA市場における「信頼」と「安定性」の象徴。デジタルバンク、資産管理プラットフォーム向けの最高のブランド資産。金融機関としての権威性を即座に確立します。
+                    </div>
+                    <div class="keywords">
+                        <p>🔑 主要キーワード支配:</p>
+                        <p>"NISA銀行", "新NISA銀行", "NISA資産管理"</p>
+                    </div>
+                </div>
+
+                <div class="asset-card">
+                    <div class="icon">📈</div>
+                    <h3>nisatoushi.jp</h3>
+                    <div class="price">$25,000</div>
+                    <div class="description">
+                        新NISA投資市場への最直感的な入口。投資プラットフォーム、教育サービス向けプレミアムドメイン。月間検索量が数百万件に達する高価値資産です。
+                    </div>
+                    <div class="keywords">
+                        <p>🔑 主要キーワード支配:</p>
+                        <p>"NISA投資", "新NISA投資", "投資プラットフォーム"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-section">
+            <h2>💰 買収条件</h2>
+            <div class="pricing-box">
+                <div class="label">NISA デジタル テリトリー 一括買収価格</div>
+                <div class="amount">$30,000</div>
+                <div class="terms">
+                    戦略的パートナーシップのための柔軟な条件設定が可能です
+                </div>
+            </div>
+            <p style="font-size: 1.05em; opacity: 0.9; margin-top: 20px;">
+                この投資から得られるROI (オーガニックトラフィック、顧客流入、ブランド価値) は、$30,000を数ヶ月以内に回収し、その後も継続的に利益を生み出します。
+            </p>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>🚀 次のステップ</h2>
+            <p>
+                このドメインパッケージは、日本の新NISA市場で圧倒的なリーダーシップを確立するための最短ルートです。<br>
+                市場の成長期は今です。戦略的な決定を今すぐお願いします。
+            </p>
+            <a href="https://www.nisatoushi.jp" class="cta-button" target="_blank">🛒 Sedo で即時購入</a>
+            <a href="mailto:global.nexus.jp@gmail.com?subject=NISA%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%86%E3%83%AA%E3%83%88%E3%83%AA%E3%83%BC%E4%BA%A4%E6%B8%89%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87&body=%E3%81%94%E6%8B%9D%E7%A4%BC%E7%94%B3%E3%81%97%E4%B8%8A%E3%81%92%E3%81%BE%E3%81%99%E3%80%82%0A%0ANISA%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E3%83%86%E3%83%AA%E3%83%88%E3%83%AA%E3%83%BC%EF%BC%88nisabank.jp%20%2B%20nisatoushi.jp%EF%BC%89%E3%81%AE%E4%B8%80%E6%8B%AC%E8%B2%B7%E5%8F%8E%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E4%BB%A5%E4%B8%8B%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%82%92%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%0A%0A%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%9A%0A%E6%A0%AA%E4%B8%BB%E4%BC%9A%E7%A4%BE%E5%90%8D%EF%BC%9A%0A%E6%8B%85%E5%BD%93%E8%80%85%E5%90%8D%EF%BC%9A%0A%E9%9B%BB%E8%A9%B1%EF%BC%9A%0A%0A%E4%BA%88%E7%AE%97%E7%AF%84%E5%9B%B2%EF%BC%9A%0A%E3%81%9D%E3%81%AE%E4%BB%96%E3%81%94%E8%B3%AA%E5%95%8F%EF%BC%9A" class="cta-button secondary">📧 戦略的パートナーシップのご相談</a>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2>📞 お問い合わせ</h2>
+            <div class="contact-section email-box">
+                <div class="email">global.nexus.jp@gmail.com</div>
+                <div class="note">
+                    Sedo での購入、直接交渉、条件調整、その他ご質問など、お気軽にお問い合わせください。<br>
+                    <strong>24時間以内に返信いたします。</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>NISA Digital Territory | nisabank.jp + nisatoushi.jp | 日本の新NISA市場における戦略的資産買収提案</p>
+    </footer>
+</body>
+</html>
